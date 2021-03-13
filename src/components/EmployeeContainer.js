@@ -4,10 +4,10 @@ import Row from "./Row";
 import Col from "./Col";
 import Card from "./Card";
 import SearchForm from "./SearchForm";
-import MovieDetail from "./MovieDetail";
+import EmployeeDetail from "./EmployeeDetail";
 import API from "../utils/API";
 
-class OmdbContainer extends Component {
+class EmployeeContainer extends Component {
   state = {
     result: {},
     search: ""
@@ -49,7 +49,7 @@ class OmdbContainer extends Component {
             <Card
               heading={this.state.result.Title || "Search for a Movie to Begin"}
             >
-              <MovieDetail
+              <EmployeeDetail
                 title={this.state.result.Title}
                 src={this.state.result.Poster}
                 director={this.state.result.Director}
@@ -73,4 +73,4 @@ class OmdbContainer extends Component {
   }
 }
 
-export default OmdbContainer;
+export default EmployeeContainer;
