@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Search from "./Search";
 import EmployeeCard from "./EmployeeCard";
 import API from "../utils/API";
-import "../styles/Result.css";
-const MaxResults = 20;
+import "../Styles/Result.css";
 
 class ResultContainer extends Component {
   state = {
